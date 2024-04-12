@@ -15,12 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('apellido');
-            $table->integer('edad');
-            $table->string('correo electronico');
-            $table->integer('telefono');
+            $table->unsignedInteger('edad');
+            $table->string('correo_electronico'); // Permitir valores nulos
+            $table->string('telefono', 10);
+            $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      */

@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Cliente extends Model
 {
     use HasFactory;
+    protected $fillable = ['nombrec','apellidoc','edadc','correo_electronicoc','telefonoc','fecha_nacimientoc'];
+    public $timestamps = false;
 }
